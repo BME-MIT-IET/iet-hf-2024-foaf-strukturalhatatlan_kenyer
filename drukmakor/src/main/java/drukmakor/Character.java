@@ -23,7 +23,6 @@ public abstract class Character implements Tickable {
 	 * @param cp
 	 */
 	public Character(Element cp) {
-
 		isStuck = 0;
 		currentPosition = cp.acceptCharacter(null, this);
 		if (currentPosition == null)
