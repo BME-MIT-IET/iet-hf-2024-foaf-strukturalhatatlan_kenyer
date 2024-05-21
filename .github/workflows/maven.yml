@@ -3,7 +3,7 @@ name: Java Maven Build & Publish Artifact
 
 on:
   push:
-    branches: [ "main", "maven_buildsystem", "grafikus" ]
+    branches: [ "main", "maven_buildsystem", "grafikus", "guitests" ]
   pull_request:
     branches: [ "main" ]
 
