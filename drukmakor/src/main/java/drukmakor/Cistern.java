@@ -33,7 +33,6 @@ public class Cistern extends ActiveElement {
 	@Override public void pullWater() {
 		for (Pipe p : pipes)
 			if (p != null && p.drainWater()) {
-				// 50 PONT A GRIFFENDÉLNEK
 				PointCounter.get().addMechanicPoint();
 				++waterLevel;
 			}
@@ -49,7 +48,6 @@ public class Cistern extends ActiveElement {
 			if (p != null && waterLevel > 0)
 				if (p.wasteWater()) {
 					PointCounter.get().subtractMechanicPoint();
-					// -50 PONT A GRIFFENDÉLNEK
 					--waterLevel;
 				}
 	}
@@ -68,7 +66,7 @@ public class Cistern extends ActiveElement {
 	 */
 	@Override
 	public Object[] get() {
-		int noValidPipes = MAX_CONNECTIONS; // number of valid pipes
+		int noValidPipes = MAX_CONNECTIONS; // érvényes csövek száma
 		while (noValidPipes > 0 && pipes[noValidPipes - 1] == null)
 			noValidPipes--;
 		Object[] ret = new Object[noValidPipes + 1]; // <csövek> <vízszint (egész szám)>
