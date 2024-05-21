@@ -1,3 +1,4 @@
+package drukmakor;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import static org.assertj.core.api.Assertions.assertThat; 

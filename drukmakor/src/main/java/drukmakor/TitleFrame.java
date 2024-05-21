@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.management.RuntimeErrorException;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -55,6 +56,7 @@ public class TitleFrame {
 		newGame=createButton(100,200,"Start Game");
 		newGame.addActionListener(new NewGameActionListener());
 		
+		
 		loadGame=createButton(100,300,"Add Player");
 		loadGame.addActionListener(new AddPActionListener());
 		
@@ -86,7 +88,8 @@ public class TitleFrame {
 		window.add(jp);
 		window.setTitle("Drukmakor");
 		window.setSize(1280,720);
-		window.setResizable(false);
+		//TODO BELENYÚLTUNK ITT window.setResizable(false);
+		window.setResizable(true);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setVisible(true);
 	}
@@ -169,6 +172,7 @@ public class TitleFrame {
 	
 	private static class AddPActionListener implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
+			//throw new RuntimeException("qweasd");
 			newGame.setEnabled(false);
 			loadGame.setEnabled(false);
 			charSelectLeft.setVisible(true);
