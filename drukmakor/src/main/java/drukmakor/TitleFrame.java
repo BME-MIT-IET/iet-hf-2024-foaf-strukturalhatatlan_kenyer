@@ -86,7 +86,7 @@ public class TitleFrame {
 		jp.add(mechN);
 		jp.add(sabN);
 		window.add(jp);
-		window.setTitle("Drukmakor");
+		window.setTitle("DrukmakorTitle");
 		window.setSize(1280,720);
 		//TODO BELENYÚLTUNK ITT window.setResizable(false);
 		window.setResizable(true);
