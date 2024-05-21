@@ -24,8 +24,7 @@ public abstract class CharacterView implements Drawable {
 	 */
 	@Override public void draw(Graphics g) { // leszármazott állít színt!!
 		Coords c = getModel().getCurrentPosition().getView().getCoords();
-		//Kis képekre váltottunk, nincs szerepe a téglalapnak
-//		g.drawRect(c.x-5, c.y-15, 10, 20);
+
 		if (soros) {
 			g.setColor(new Color(186,27,27));
 			g.fillOval(c.x - 6, c.y - 27, 12, 12);

@@ -33,6 +33,10 @@ public class Cistern extends ActiveElement {
 	@Override public void pullWater() {
 		for (Pipe p : pipes)
 			if (p != null && p.drainWater()) {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 				PointCounter.get().addMechanicPoint();
 				++waterLevel;
 			}
@@ -48,6 +52,10 @@ public class Cistern extends ActiveElement {
 			if (p != null && waterLevel > 0)
 				if (p.wasteWater()) {
 					PointCounter.get().subtractMechanicPoint();
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 					--waterLevel;
 				}
 	}
