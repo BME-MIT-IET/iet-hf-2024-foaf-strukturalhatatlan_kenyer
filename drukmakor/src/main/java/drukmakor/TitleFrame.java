@@ -92,6 +92,7 @@ public class TitleFrame {
 		window.setResizable(true);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setVisible(true);
+		mech=0; sab=0; activeNo=1;
 	}
 	/**Gomb gyártó függvény
 	 * @param posx x pozíció

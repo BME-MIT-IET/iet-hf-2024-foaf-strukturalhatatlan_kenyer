@@ -56,12 +56,12 @@ class GuiTest {
     public void tearDown() {
         window.cleanUp();
     }
-/*
+
     @Test
     @GUITest
     public void shouldHaveCorrectTitle() {
         window.requireTitle("Drukmakor"); // Change to the expected title of the frame
-    }*/
+    }
     
     @Test
     @GUITest
@@ -71,5 +71,20 @@ class GuiTest {
         //Pause.pause(1000);
         window.button(JButtonMatcher.withText("Saboteur")).click();
         window.label(JLabelMatcher.withText(Pattern.compile("Saboteurs: .* players"))).requireText("Saboteurs: 1 players");
+    }
+    
+    @Test
+    @GUITest
+    public void shouldAddSaboteursAndMechanic() {
+        window.button(JButtonMatcher.withText("Add Player")).click();
+        window.button(JButtonMatcher.withText("Saboteur")).click();
+        window.button(JButtonMatcher.withText("Add Player")).click();
+        window.button(JButtonMatcher.withText("Saboteur")).click();
+        window.button(JButtonMatcher.withText("Add Player")).click();
+        window.button(JButtonMatcher.withText("Saboteur")).click();
+        window.button(JButtonMatcher.withText("Add Player")).click();
+        window.button(JButtonMatcher.withText("Mechanic")).click();
+        window.label(JLabelMatcher.withText(Pattern.compile("Saboteurs: .* players"))).requireText("Saboteurs: 3 players");
+        window.label(JLabelMatcher.withText(Pattern.compile("Mechanics: .* players"))).requireText("Mechanics: 1 players");
     }
 }
