@@ -117,7 +117,7 @@ public class Grafikus {
 	 */
 	public static void createAndShowGameGUI() {
 		
-		JFrame frame = new JFrame("Drukmakor");
+		JFrame frame = new JFrame("DrukmakorGame");
         frame.setSize(1280, 720);
         frame.setMinimumSize(new Dimension(320, 240));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -3,8 +3,7 @@
 ```sh
 cd drukmakor
 mvn package
-cd ../assets
-java -jar ../drukmakor/target/drukmakor-1.0-SNAPSHOT.jar
+java -jar target/drukmakor-1.0-SNAPSHOT.jar
 ```
 
 A programnak szüksége van képekre, és a palya.txt-re a futáshoz, ezeknek a current working directory-ban elérhetőnek kell lenniük (a fentebbi utasítások pontos végrehajtásának eredményeképp ezen fájlok megfelelő pozíciója biztosított kell legyen).
