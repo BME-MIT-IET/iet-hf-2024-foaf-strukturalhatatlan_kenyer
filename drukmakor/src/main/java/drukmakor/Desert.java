@@ -63,8 +63,6 @@ public class Desert extends JPanel {
 		super.paintComponent(g);
 		TexturePaint tp = new TexturePaint(sandImage, new Rectangle(0, 0, sandImage.getWidth(), sandImage.getHeight()));
 
-		/*g.setColor(new Color(140, 78, 7));
-		g.fillRect(0, 0, getWidth(), getHeight());*/
 
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setPaint(tp);

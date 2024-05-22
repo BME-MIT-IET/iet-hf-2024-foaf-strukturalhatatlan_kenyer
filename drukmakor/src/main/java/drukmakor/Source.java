@@ -25,7 +25,7 @@ public class Source extends ActiveElement {
 	 */
 	@Override
 	public Object[] get() {
-		int noValidPipes = MAX_CONNECTIONS; // number of valid pipes
+		int noValidPipes = MAX_CONNECTIONS; // érvényes csövek száma
 		while (noValidPipes > 0 && pipes[noValidPipes - 1] == null)
 			noValidPipes--;
 		Object[] ret = new Object[noValidPipes]; // <csövek>

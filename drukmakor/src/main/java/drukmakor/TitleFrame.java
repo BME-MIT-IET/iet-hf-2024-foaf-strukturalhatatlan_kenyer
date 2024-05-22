@@ -176,7 +176,6 @@ public class TitleFrame {
 			toggleButton.setVisible(true);
 			bgPanel[0].setVisible(true);
 			bgPanel[activeNo].setVisible(true);
-			//bgPanel[2].setVisible(true);
 		}
 	}
 	
