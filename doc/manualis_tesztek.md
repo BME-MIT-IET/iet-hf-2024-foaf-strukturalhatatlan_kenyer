@@ -1,6 +1,10 @@
 # Tesztesetek létrehozása
 
-ide írjatok valamit a tesztekről
+A tesztek mappában található "tesztek_tervei.pdf" fájlban található először a tesztek terve egy átfogó táblázatban, majd a tesztek részletes leírása, a pontos kivitelezendő utasításokkal és a modell alapján várt kimenetekkel.
+
+A tesztek tervezésénél igyekeztünk az alkalmazás funkcióit az összes eshetőségre kipróbálni például a szerelő a törött és nem törött és nem törött pumpát is megpróbálja megjavítani. Ezzel igyekeztünk elkerülni a pontatlanságból észre nem vett hibákat, melyek talán kikerülnék a tesztelés során a figyelmünket, hiszen triviálisan elronthatatlan eseteknek tűnnek első ránézésre.
+
+Nem egyszerű feladat egy alkalmazás átfogó, minden esetre kitérő tesztelése.
 
 # Manuális tesztelés elvégzése
 
