@@ -246,7 +246,6 @@ public class Pipe extends Element {
 	 */
 	public boolean wasteWater() {
 		if ((end1 == null || end2 == null) && !(end1Carried || end2Carried)) { // dangling: azaz az egyik vége null, és nem szállítják
-			//50 PONT A GRIFFENDÉLNEK
 			PointCounter.get().addSaboteurPoint();
 			return true;
 		}
@@ -259,11 +258,11 @@ public class Pipe extends Element {
 	@Override public boolean placePump(Pump p) {
 		// occupied csövet nem lehet felszedni!
 		ActiveElement prevend1 = end1;
-		isOccupied = false; //temporary, hogy  a többi működjön
+		isOccupied = false; //ideiglenes, hogy  a többi működjön
 		end1.disconnectPipe(this);
 		Proto.newPipe(prevend1, p); //Productionben nem Proto. dolog lesz hanem new Pipe(args)
 		boolean res2 = p.connectPipe(this, -1);
-		isOccupied = true; // íme, itt vissza is jött
+		isOccupied = true; 
 		if (!res2)
 			throw new RuntimeException("A cső csatlakoztatása az új pumpához sikertelen!");
 		

@@ -89,7 +89,7 @@ public class Pump extends ActiveElement {
 	 */
 	@Override
 	public Object[] get() {
-		int noValidPipes = MAX_CONNECTIONS; // number of valid pipes
+		int noValidPipes = MAX_CONNECTIONS; // érvényes csöveg száma
 		while (noValidPipes > 0 && pipes[noValidPipes - 1] == null)
 			noValidPipes--;
 		Object[] ret = new Object[noValidPipes + 4]; // <csövek> <van-e benne víz> <eltört-e> <bemeneti index> <kimeneti index>
