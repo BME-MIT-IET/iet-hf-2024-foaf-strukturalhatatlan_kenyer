@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\drukmakor"
   ],
   "SelectedNode": "\\.github\\workflows\\build.yml",
   "PreviewInSolutionExplorer": false
