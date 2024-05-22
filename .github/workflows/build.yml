@@ -34,4 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B -f drukmakor/pom.xml verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=BME-MIT-IET_iet-hf-2024-foaf-strukturalhatatlan_kenyer
+        run:  |
+          export DISPLAY=:99
+          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
+          # mvn -B package --file drukmakor/pom.xml
+          mvn -B -f drukmakor/pom.xml verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=BME-MIT-IET_iet-hf-2024-foaf-strukturalhatatlan_kenyer
