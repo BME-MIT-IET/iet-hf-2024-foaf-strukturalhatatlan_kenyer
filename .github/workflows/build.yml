@@ -2,7 +2,7 @@ name: SonarCloud
 on:
   push:
     branches:
-      - grafikus
+      - manualis_atvizsgalas
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
