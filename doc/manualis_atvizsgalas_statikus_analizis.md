@@ -1,4 +1,4 @@
-== Manuális kódátvizsgálás
+# Manuális kódátvizsgálás
 
 A manuális kódátvizsgálás során átnéztük a project különböző .java fájljait. Szabad szemmel főként a kommentezésben találtunk hibákat, melyek nem súlyos hibák, de a kód átláthatósága szemponjából fontosnak tartottuk javítani. 
 
@@ -6,11 +6,11 @@ Egyik ilyen hiba volt az inkonzisztens kommentezés. A project alapvetően egy k
 
 A másik hiba, pedig a nem oda illő, helyenként "vicces" kommentek. Programozás közben saját magunk szórakoztatására, illetve a kód megérthetősége szempontjából sokan szoktunk ilyen kommenteket írni, viszont amikor már nem ebben a fázisban vagyunk és akár más fejlesztők is hozzá kell férjenek a kódhoz, célszerű ezeket kitörölni. Egyrészt ők nem feltétlen értik már a kontextust ami miatt az odakerült, másrészt komolytalannak is tűnhet. 
 
-== Statikus kódanalízis
+# Statikus kódanalízis
 
 A statikus analízist SonarCloud segítségével végeztük. Egészen sok issue-t jelzett, azonban ezeket megvizsgálva megállapítottuk, hogy ez esetben nincs igaza a statikus analízisnek, mivel ezek a kódolási megoldások az objektum orientáltság miatt lettek így kitalálva. Gondosan megtervezett OOP projektről van szó, emiatt találhatóak benne feleslegesnek tűnő paraméterek. Ezek a paraméterek vagy függvények mind a polimorfizmus megvalósítását szolgálják.
 
-image::f1.png[]
+![](f1.png)
 
 A képen is látszik, hogy tudatos tervezéssel lett kódolva ez a rész, bár a sonarcloud javítást javasolna.
 
