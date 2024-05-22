@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\main",
-    "\\src\\main\\java",
-    "\\src\\main\\java\\drukmakor"
+    "\\.github",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\src\\main\\java\\drukmakor\\Desert.java",
+  "SelectedNode": "\\.github\\workflows\\build.yml",
   "PreviewInSolutionExplorer": false
 }
