@@ -13,3 +13,5 @@ A tesztelésről szóló pdf alapján szúró-próba szerűen elvégeztem a tesz
 Az általam elvégzett tesztek nagy része ugyanazt a kimenetet adta, mint ami az elvárt volt. A pdf-ben 21-es sorszámmal jelölt teszteset viszont végeredményül a legutolsó parancs után rossz eredményt mutatott.
 
 A tanulság amit levontam a manuális tesztelésből az a fontossága, ugyanis a jelenlegi példámból is látszik, hogy ugyan nem ellenőriztem mindet és a választásaim teljesen véletlenszerűek voltak, mégis sikerült találnom olyat ami nem helyesen működött. A rendszer éles működése közben is belefutna ugyanekkora valószínűséggel egy ilyen hibába a felhasználó, ami nagyon kellemetlen lenne. A manuális tesztelés által viszont a felhasználó bőrébe bújva tudjuk átvizsgálni a rendszert, hogy a lehető legtöbb hibát elimináljuk.
+
+![eredmények](image.png)
